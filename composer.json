@@ -1,0 +1,10 @@
+{
+    "name": "sunshinephp/ssphp-main-site",
+    "description": "Main site files for the SunshinePHP Developer Conference site.",
+    "keywords": ["sunshinephp","main-site"],
+    "homepage": "http://sunshinephp.com/",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.2.*"
+    }
+}
