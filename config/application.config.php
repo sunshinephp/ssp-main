@@ -5,7 +5,8 @@ return array(
         'Application',
         'SspContact',
         'SspTalks',
-        'SspSponsors'
+        'SspSponsors',
+        'SspBlog',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
