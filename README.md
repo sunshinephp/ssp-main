@@ -1,4 +1,28 @@
-pubsite-2014
-============
+ssp-main
+=============
 
-This repo contains the public 2014 conference site.
+This repo contains the public 2014 SunshinePHP conference site created with Zend Framework 2.
+Please check out the info below to ensure all dependencies are met.
+
+Requirements
+------------
+
+* [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
+
+Installation
+------------
+
+### Main Setup
+
+#### Clone project
+
+1. Clone this project into your `./vendor/` directory.
+
+#### Use Composer to get dependencies
+
+2. Now tell composer to download dependencies by running the command:
+
+    ```bash
+    $ php composer.phar install
+    ```
+    
