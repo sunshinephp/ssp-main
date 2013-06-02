@@ -9,6 +9,7 @@
         "sunshinephp/ssp-contact": "dev-master",
         "sunshinephp/ssp-talks": "dev-master",
         "sunshinephp/ssp-sponsors": "dev-master",
-        "sunshinephp/ssp-blog": "dev-master"
+        "sunshinephp/ssp-blog": "dev-master",
+        "sunshinephp/ssp-press": "dev-master"
     }
 }
