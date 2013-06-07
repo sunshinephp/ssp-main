@@ -16,7 +16,7 @@ Installation
 
 #### Clone project
 
-1. Clone this project into your `./vendor/` directory.
+1. Clone this project into your working directory.
 
 #### Use Composer to get dependencies
 
@@ -25,4 +25,5 @@ Installation
     ```bash
     $ php composer.phar install
     ```
-    
+3. Set up your desired webserver to point to the 'public' directory.
+4. Enjoy!!!
