@@ -21,6 +21,7 @@ Installation
 #### Use Composer to get dependencies
 
 2. Now tell composer to download dependencies by running the command:
+NOTE: May need to download composer.phar first from http://getcomposer.org
 
     ```bash
     $ php composer.phar install
