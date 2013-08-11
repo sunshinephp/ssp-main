@@ -11,6 +11,8 @@
         "sunshinephp/ssp-sponsors": "dev-master",
         "sunshinephp/ssp-blog": "dev-master",
         "sunshinephp/ssp-press": "dev-master",
-        "zf-commons/zfc-user": "0.1.*@dev"
+        "zf-commons/zfc-user": "0.1.*@dev",
+        "aramonc/zf2-form-view-helpers": "dev-master",
+        "adamculp/api-consumer": "dev-master"
     }
 }
