@@ -50,6 +50,17 @@ return array(
                     ),
                 ),
             ),
+            'register' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/register',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller' => 'Index',
+                        'action' => 'register',
+                    ),
+                ),
+            ),
         ),
     ),
     'service_manager' => array(
