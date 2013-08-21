@@ -38,20 +38,22 @@
                     </button>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
-                            <li><a href="<?php echo $this->url('press-index') ?>"><?php echo $this->translate('Press') ?></a></li>
-                            <li><a href="<?php echo $this->url('blog-index') ?>"><?php echo $this->translate('Blog') ?></a></li>
-                            <li><a href="<?php echo $this->url('talks-index') ?>"><?php echo $this->translate('Talks') ?></a></li>
-                            <li><a href="<?php echo $this->url('sponsors-index') ?>"><?php echo $this->translate('Sponsors') ?></a></li>
-                            <li><a href="<?php echo $this->url('contact-index') ?>"><?php echo $this->translate('Contact') ?></a></li>
-                            <li><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('Register') ?></a></li>
+                            <?php
+                            echo $this->navigation('navigation')
+                                ->menu()
+                                ->setMinDepth(0)
+                                ->setMaxDepth(0)
+                                ->setUlClass('nav')
+                                ->render();
+                            ?>
+                            <li><a href="http://cfp.sunshinephp.com" title="Call for Papers" target="_blank"><?php echo $this->translate('Call for Papers') ?></a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
         </div>
         
-        <header class="jumbotron subhead" id="overview">
+        <header class="jumbotron subhead" id="overview" style="background-image: url('/img/sunshinephp_header_bg.jpg');background-repeat: no-repeat;background-position: center;">
             <div class="container">
                 <div class="row">
                     <div class="span6">
@@ -64,7 +66,7 @@
                 </div>
             </div>
         </header>
-        
+
         <?php echo $this->content; ?>
 
         <footer id="footer-home">

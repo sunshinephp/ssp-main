@@ -43,10 +43,11 @@
             <div class="row">
                 <div class="span9">
                     <section id="block-download">
-                        <ul class="breadcrumb">
-                            <li><a href="/">Home</a> <span class="divider">/</span></li>
-                            <li class="active">SunshinePHP Conference</li>
-                        </ul>
+                        <?php echo $this->navigation('navigation')
+                            ->breadcrumbs()
+                            ->setMinDepth(0)
+                            ->setPartial(array('partial/breadcrumb.phtml', 'Application'));
+                        ?>
                         <div class="page-header">
                             <h1>SunshinePHP Conference</h1>
                         </div>
