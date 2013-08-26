@@ -1154,11 +1154,6 @@ ul#icons span.ui-icon {
 		margin:10px 0;
 	}
 	.cycle-slideshow .slide img {
-
-	}
-}
-@media (min-width:768px) and (max-width:1279px) {
-	.cycle-slideshow .slide img {
 		/*max-width:179px;*/
 	}
 }

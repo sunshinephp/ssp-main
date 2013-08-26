@@ -1,0 +1,87 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('SunshinePHP '. $this->translate('Developer Conference'))->setSeparator(' - ')->setAutoEscape(false); ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0'); ?>
+        <?php //echo $this->headMeta()->appendName('description', 'SunshinePHP Conference - February 6th-8th 2014'); ?>
+        <?php //echo $this->headMeta()->appendName('author', 'SunshinePHP, Conference'); ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css'); ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                      ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.min.js')
+                                      ->prependFile($this->basePath() . '/js/modernizr.custom.78736.js'); ?>
+        
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+    <body data-spy="scroll" data-target=".sunshine-php-2014" data-twttr-rendered="true">
+    
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <?php
+                            echo $this->navigation('navigation')
+                                ->menu()
+                                ->setMinDepth(0)
+                                ->setMaxDepth(0)
+                                ->setUlClass('nav')
+                                ->render();
+                            ?>
+                            <li><a href="http://cfp.sunshinephp.com" title="Call for Papers" target="_blank"><?php echo $this->translate('Call for Papers') ?></a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        
+        <header class="jumbotron subhead" id="overview" style="background-image: url('/img/sunshinephp_header_bg.jpg');background-repeat: no-repeat;background-position: center;">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <a href="/" title=""><img src="/img/sunshinephp_logo_2014_800px.png" alt="SunshinePHP Conference - February 6th-8th, 2014"></a>
+                    </div>
+                    <div class="span6 text-center">
+                        <p class="text-center" id="home-hdr-copy">It's warm and sunny in Florida. Take a break from the cold to enjoy some sunshine, and talk about PHP!</p>
+                        <a href="/register" class="btn btn-register" title="Register Now!">REGISTER!</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <?php echo $this->content; ?>
+
+        <footer id="footer-home">
+            <div class="container">
+                <div class="row">
+                    <h5 class="text-center capitalize fade-in four">&copy; 2012 - <?php echo date('Y') ?> by SunshinePHP Developer Conference <?php echo $this->translate('All rights reserved.') ?></h5>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/js/jquery.cycle2.js"></script>
+        <script src="/js/jquery.cycle2.center.js"></script>
+        <script src="/js/bootstrap-tab.js"></script>
+        <script src="/js/custom.js"></script>
+        
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
