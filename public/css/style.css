@@ -943,17 +943,17 @@ ul#icons span.ui-icon {
 	background-color: #6dc6be;
 }
 .cycle-slideshow {
-	max-height:324px;
-	/*overflow:hidden;
+	/*max-height:324px;
+	overflow:hidden;
 	margin-bottom:20px;*/
 }
 .cycle-slideshow .slide {
-	min-width:100%;
+	max-width:100%;
 	text-align:center;
 	border-radius:7px;
 }
 .cycle-slideshow .slide img {
-	max-width:272px;
+	max-width:100%;
 	border-radius:7px;
 	-moz-box-shadow: 0 0 10px #888;
 	-webkit-box-shadow: 0 0 10px #888;
@@ -1153,6 +1153,14 @@ ul#icons span.ui-icon {
 		line-height:1.25em;
 		margin:10px 0;
 	}
+	.cycle-slideshow .slide img {
+
+	}
+}
+@media (min-width:768px) and (max-width:1279px) {
+	.cycle-slideshow .slide img {
+		/*max-width:179px;*/
+	}
 }
 @media (max-width:979px) {
 	.navbar-inverse .nav-collapse .nav>li>a, .navbar-inverse .nav-collapse .dropdown-menu a {
@@ -1168,4 +1176,23 @@ ul#icons span.ui-icon {
 	.cycle-slideshow {
 		margin-bottom:20px;
 	}
+}
+
+.breakout
+{
+	font-weight: bold;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	line-height: 14px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #ffffff;
+	background-color: #B24926;
 }
