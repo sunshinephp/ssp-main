@@ -602,6 +602,10 @@ form.bs-docs-example {
 		margin-top: 30px;
 		margin-right: 0;
 	}
+
+	.navbar-inverse .nav-collapse .nav>li>a, .navbar-inverse .nav-collapse .dropdown-menu a {
+		color: #fff;
+	}
 }
 
 /* Tablet to desktop
@@ -622,6 +626,12 @@ form.bs-docs-example {
 	}
 	.bs-docs-sidenav.affix {
 		top: 0;
+	}
+
+	.jumbotron p {
+		font-size:16px;
+		line-height:1.25em;
+		margin:10px 0;
 	}
 }
 
@@ -679,6 +689,15 @@ form.bs-docs-example {
 	}
 	.footer p {
 		margin-bottom: 9px;
+	}
+
+	.jumbotron p {
+		font-size:14px;
+		line-height:1.25em;
+		margin:20px 0;
+	}
+	.cycle-slideshow {
+		margin-bottom:20px;
 	}
 }
 
@@ -880,10 +899,10 @@ ul#icons span.ui-icon {
 	margin-bottom: 20px;
 }
 
-
 .text-left {text-align:left;}
 .text-center {text-align:center;}
 .text-right {text-align:right;}
+
 .navbar-inverse .navbar-inner {
 	background-color: #B74025;
 	background-image: -moz-linear-gradient(top, #B74025, #B24926);
@@ -937,22 +956,11 @@ ul#icons span.ui-icon {
 	font-weight:bold;
 }
 .featurette {
-	text-align: center;
 	padding: 30px 0;
 	margin-top: 0px;
 	background-color: #6dc6be;
 }
-.cycle-slideshow {
-	/*max-height:324px;
-	overflow:hidden;
-	margin-bottom:20px;*/
-}
 .cycle-slideshow .slide {
-	max-width:100%;
-	text-align:center;
-	border-radius:7px;
-}
-.cycle-slideshow .slide img {
 	max-width:100%;
 	border-radius:7px;
 	-moz-box-shadow: 0 0 10px #888;
@@ -1139,38 +1147,12 @@ ul#icons span.ui-icon {
 	height: 40px
 }
 #footer-home {
-	border-top: 4px solid #4287bd;
+	border-top: 4px solid #6dc6be;
 	margin-top:40px;
 	background: #B24926;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 1px #303030
-}
-
-@media (min-width:768px) and (max-width:1280px) {
-	.jumbotron p {
-		font-size:16px;
-		line-height:1.25em;
-		margin:10px 0;
-	}
-	.cycle-slideshow .slide img {
-		/*max-width:179px;*/
-	}
-}
-@media (max-width:979px) {
-	.navbar-inverse .nav-collapse .nav>li>a, .navbar-inverse .nav-collapse .dropdown-menu a {
-		color: #fff;
-	}
-}
-@media (max-width:767px) {
-	.jumbotron p {
-		font-size:14px;
-		line-height:1.25em;
-		margin:20px 0;
-	}
-	.cycle-slideshow {
-		margin-bottom:20px;
-	}
 }
 
 .breakout

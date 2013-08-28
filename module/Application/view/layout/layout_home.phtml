@@ -37,7 +37,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="nav-collapse collapse">
-                        <ul class="nav">
+                        <ul class="nav nav-pills pull-right">
                             <?php
                             echo $this->navigation('navigation')
                                 ->menu()
@@ -70,18 +70,19 @@
         <?php echo $this->content; ?>
 
         <footer id="footer-home">
-            <div class="container">
+            <div class="container text-center capitalize fade-in four">
                 <div class="row">
-                    <h5 class="text-center capitalize fade-in four">&copy; 2012 - <?php echo date('Y') ?> by SunshinePHP Developer Conference <?php echo $this->translate('All rights reserved.') ?></h5>
+                    &copy; 2012 - <?php echo date('Y') ?> by SunshinePHP Developer Conference <?php echo $this->translate('All rights reserved.') ?>
                 </div>
             </div>
         </footer>
 
-        <script src="/js/jquery.cycle2.js"></script>
-        <script src="/js/jquery.cycle2.center.js"></script>
+        <?php echo $this->inlineScript() ?>
+        
         <script src="/js/bootstrap-tab.js"></script>
         <script src="/js/custom.js"></script>
-        
-        <?php echo $this->inlineScript() ?>
+        <script src="/js/jquery.cycle2.js"></script>
+        <script src="/js/jquery.cycle2.center.js"></script>
+    
     </body>
 </html>
