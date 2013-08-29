@@ -61,6 +61,63 @@ return array(
                     ),
                 ),
             ),
+            'venue' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/venue',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller' => 'Index',
+                        'action' => 'venue',
+                    ),
+                ),
+            ),
+        ),
+    ),
+    'navigation' => array(
+        'default' => array(
+            array(
+                'label' => 'Home',
+                'route' => 'home',
+            ),
+            array(
+                'label' => 'Venue',
+                'route' => 'venue',
+            ),
+//            array(
+//                'label' => 'Press',
+//                'route' => 'press-index',
+//            ),
+//            array(
+//                'label' => 'Blog',
+//                'route' => 'blog-index',
+//            ),
+//            array(
+//                'label' => 'Schedule',
+//                'route' => 'schedule-index',
+//                'pages' => array(
+//                    array(
+//                        'label' => 'Talks',
+//                        'route' => 'talks-index',
+//                    ),
+//                    array(
+//                        'label' => 'Speakers',
+//                        'route' => 'speakers-index',
+//                    ),
+//                ),
+//            ),
+            array(
+                'label' => 'Sponsors',
+                'route' => 'sponsors-index',
+            ),
+            array(
+                'label' => 'Contact',
+                'route' => 'contact-index',
+            ),
+            array(
+                'label' => 'Register',
+                'route' => 'register',
+            ),
         ),
     ),
     'service_manager' => array(
@@ -70,6 +127,9 @@ return array(
         ),
         'aliases' => array(
             'translator' => 'MvcTranslator',
+        ),
+        'factories' => array(
+            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
         ),
     ),
     'translator' => array(

@@ -1,36 +1,36 @@
 <div class="featurette">
     <div class="container">
         <div class="row">
-            <div class="span3 text-center">
-                <div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-center-horz="true" data-cycle-speed="200" data-timeout="5000" data-cycle-slides="> div">
-                    <div class="slide"><img src="/img/ssphp-2013/1.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/2.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/3.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/4.jpg"></div>
+            <div id="col1" class="span3">
+                <div class="cycle-slideshow">
+                    <img src="/img/ssphp-2013/1.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/2.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/3.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/4.jpg" class="slide" />
                 </div>
             </div>
-            <div class="span3 text-center">
-                <div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-center-horz="true" data-cycle-speed="200" data-timeout="5000" data-cycle-slides="> div">
-                    <div class="slide"><img src="/img/ssphp-2013/2.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/3.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/4.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/1.jpg"></div>
+            <div id="col2" class="span3">
+                <div class="cycle-slideshow">
+                    <img src="/img/ssphp-2013/5.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/6.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/7.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/8.jpg" class="slide" />
                 </div>
             </div>
-            <div class="span3 text-center">
-                <div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-center-horz="true" data-cycle-speed="200" data-timeout="5000" data-cycle-slides="> div">
-                    <div class="slide"><img src="/img/ssphp-2013/3.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/4.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/1.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/2.jpg"></div>
+            <div id="col3" class="span3">
+                <div class="cycle-slideshow">
+                    <img src="/img/ssphp-2013/9.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/10.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/11.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/12.jpg" class="slide" />
                 </div>
             </div>
-            <div class="span3 text-center">
-                <div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-center-horz="true" data-cycle-speed="200" data-timeout="5000" data-cycle-slides="> div">
-                    <div class="slide"><img src="/img/ssphp-2013/4.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/1.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/2.jpg"></div>
-                    <div class="slide"><img src="/img/ssphp-2013/3.jpg"></div>
+            <div id="col4" class="span3">
+                <div class="cycle-slideshow">
+                    <img src="/img/ssphp-2013/4.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/8.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/1.jpg" class="slide" />
+                    <img src="/img/ssphp-2013/10.jpg" class="slide" />
                 </div>
             </div>
         </div>
@@ -43,52 +43,44 @@
             <div class="row">
                 <div class="span9">
                     <section id="block-download">
-                        <ul class="breadcrumb">
-                            <li><a href="/">Home</a> <span class="divider">/</span></li>
-                            <li class="active">SunshinePHP Conference</li>
-                        </ul>
+                        <?php /*echo $this->navigation('navigation')
+                            ->breadcrumbs()
+                            ->setMinDepth(0)
+                            ->setPartial(array('partial/breadcrumb.phtml', 'Application'));*/
+                        ?>
                         <div class="page-header">
-                            <h1>SunshinePHP Conference</h1>
+                            <h1>Welcome to SunshinePHP!</h1>
                         </div>
                         <div id="block-mine">
-                            <p>The SunshinePHP Conference has something every level of developer. We will be busy preparing for next year, so please check back to see more details later. Come see what others are doing, and share your experience as well. And there will be plenty of fun and beer on tap for everyone!</p>
+                            <p>
+                                The PHP community in South Florida (<a href="http://soflophp.org" title="SoFloPHP">SoFloPHP</a>) 
+                                organized a PHP developer conference in Miami from February 6th - 8th, 2014, and 
+                                <strong>you're invited!</strong> 
+                                We will host some of the best speakers, awesome talk topics, latest technologies, 
+                                and up to date news in PHP. And don't forget a Hack-a-thon and Uncon'ference!<br /><br />
+                                The SunshinePHP Conference has something for every level of developer. 
+                                We will be busy preparing for next year, so please check back to see 
+                                more details later. Come see what others are doing, and share your 
+                                experience as well. And there will be plenty of fun and beer on tap 
+                                for everyone!
+                            </p>
                             <p>&nbsp;</p>
                         </div>
-                        <div id="tab-carousel" class="tabbable">
-                            <ul class="nav nav-pills" id="myTab">
-                                <li class="active">
-                                    <a href="#tab1" data-toggle="tab">By Developers, For Developers</a>
-                                </li>
-                                <li>
-                                    <a href="#tab2" data-toggle="tab">Great Speakers</a>
-                                </li>
-                                <li>
-                                    <a href="#tab3" data-toggle="tab">Awesome Sponsors</a>
-                                </li>
-                            </ul>
-                            <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane active" id="tab1">
-                                    <p>This conference is a being led by developers active in the PHP community. We kept the cost low to make it easier for developers to attend, and also kept the dates to Friday and Saturday so getting time off is not an issue.</p>
-                                </div>
-                                <div class="tab-pane" id="tab2">
-                                    <p>The amount of talk proposals from speakers around the globe were overwhelming! Sadly we only have time for 30 talks. But we feel confident the talks chosen offer something for everyone. So please come join us, as we share and learn.</p>
-                                </div>
-                                <div class="tab-pane" id="tab3">
-                                    <p>The SunshinePHP Conference is made possible by our wonderful sponsors. We are very thankful to each and every sponsor who stepped up to helped make this conference possible. Please join us by supporting these wonderful companies.</p>
-                                </div>
-                            </div>
+                        <div class="row">
+                        <div class="span3">
+                            <div class="breakout">By Developers, For Developers</div>
+                            <div>This conference is a being led by developers active in the PHP community. We kept the cost low to make it easier for developers to attend, and also kept the dates to Friday and Saturday so getting time off is not an issue.</div>
                         </div>
-                        <div class="pagination pagination-mini pagination-centered">
-                            <ul>
-                                <li><a href="#">Prev</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">Next</a></li>
-                            </ul>
+                        <div class="span3">
+                            <div class="breakout">Great Speakers</div>
+                            <div>The amount of talk proposals from speakers around the globe were overwhelming! Sadly we only have time for 30 talks. But we feel confident the talks chosen offer something for everyone. So please come join us, as we share and learn.</div>
                         </div>
+                        <div class="span3">
+                            <div class="breakout">Awesome Sponsors</div>
+                            <div>The SunshinePHP Conference is made possible by our wonderful sponsors. We are very thankful to each and every sponsor who stepped up to helped make this conference possible. Please join us by supporting these wonderful companies.</div>
+                        </div>
+                        </div>
+                        
                     </section>
                 </div>
                 

@@ -37,7 +37,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="nav-collapse collapse">
-                        <ul class="nav">
+                        <ul class="nav nav-pills pull-right">
                             <?php
                             echo $this->navigation('navigation')
                                 ->menu()
@@ -67,27 +67,7 @@
             </div>
         </header>
 
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <div class="row">
-                        <div class="span9">
-                            <section id="block-download">
-                                <?php /*echo $this->navigation('navigation')
-                                    ->breadcrumbs()
-                                    ->setMinDepth(0)
-                                    ->setPartial(array('partial/breadcrumb.phtml', 'Application'));*/
-                                ?>
-                                
-                                <?php echo $this->content; ?>
-
-                            </section>
-                        </div>
-                        <?php echo $this->sidebar(); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php echo $this->content; ?>
 
         <footer id="footer-home">
             <div class="container text-center capitalize fade-in four">
@@ -96,9 +76,9 @@
                 </div>
             </div>
         </footer>
-        
+
         <?php echo $this->inlineScript() ?>
-        
+
         <script type="text/javascript">
 
             var _gaq = _gaq || [];
@@ -113,7 +93,7 @@
             })();
 
         </script>
-
+        
         <script src="/js/bootstrap-tab.js"></script>
         <script src="/js/custom.js"></script>
         <script src="/js/jquery.cycle2.js"></script>

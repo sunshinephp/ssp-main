@@ -16,10 +16,17 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $this->layout('layout/layout_home');
+        
+        return new ViewModel(); 
     }
     
     public function registerAction()
+    {
+        return new ViewModel();
+    }
+
+    public function venueAction()
     {
         return new ViewModel();
     }
