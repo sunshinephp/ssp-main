@@ -72,6 +72,17 @@ return array(
                     ),
                 ),
             ),
+            'sitemap' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/sitemap',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller' => 'Index',
+                        'action' => 'sitemap',
+                    ),
+                ),
+            ),
         ),
     ),
     'navigation' => array(
@@ -79,10 +90,16 @@ return array(
             array(
                 'label' => 'Home',
                 'route' => 'home',
+                'lastmod' => date('Y-m-d'),
+                'changefreq' => 'monthly',
+                'priority' => '1.0',
             ),
             array(
                 'label' => 'Venue',
                 'route' => 'venue',
+                'lastmod' => date('Y-m-d'),
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
             ),
 //            array(
 //                'label' => 'Press',
@@ -109,14 +126,23 @@ return array(
             array(
                 'label' => 'Sponsors',
                 'route' => 'sponsors-index',
+                'lastmod' => date('Y-m-d'),
+                'changefreq' => 'weekly',
+                'priority' => '0.7',
             ),
             array(
                 'label' => 'Contact',
                 'route' => 'contact-index',
+                'lastmod' => date('Y-m-d'),
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
             ),
             array(
                 'label' => 'Register',
                 'route' => 'register',
+                'lastmod' => date('Y-m-d'),
+                'changefreq' => 'daily',
+                'priority' => '0.8',
             ),
         ),
     ),
