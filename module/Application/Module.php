@@ -19,6 +19,11 @@ class Module
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
+        
+        // we do this below so we can append the path to the description meta tag
+        $application = $e->getParam('application');
+        $viewModel = $application->getMvcEvent()->getViewModel();
+        $viewModel->path = $e->getRequest()->getUri()->getPath();
     }
 
     public function getConfig()

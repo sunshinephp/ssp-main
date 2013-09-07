@@ -1,13 +1,12 @@
 <?php echo $this->doctype(); ?>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <?php echo $this->headTitle('SunshinePHP '. $this->translate('Developer Conference'))->setSeparator(' - ')->setAutoEscape(false); ?>
 
-        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0'); ?>
-        <?php //echo $this->headMeta()->appendName('description', 'SunshinePHP Conference - February 6th-8th 2014'); ?>
-        <?php //echo $this->headMeta()->appendName('author', 'SunshinePHP, Conference'); ?>
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendName('description', 'Sunshine PHP Developer Conference in Miami, Florida - February 6th-8th 2014 | ' . str_replace('/','', $path))
+            ->appendName('author', 'SunshinePHP Developer Conference'); ?>
 
         <!-- Le styles -->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
