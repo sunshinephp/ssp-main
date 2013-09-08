@@ -90,72 +90,50 @@ return array(
             array(
                 'label' => 'Home',
                 'route' => 'home',
-                'lastmod' => date('Y-m-d'),
+                'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
                 'priority' => '1.0',
             ),
             array(
                 'label' => 'Venue',
                 'route' => 'venue',
-                'lastmod' => date('Y-m-d'),
+                'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
             ),
-//            array(
-//                'label' => 'Press',
-//                'route' => 'press-index',
-//            ),
-//            array(
-//                'label' => 'Blog',
-//                'route' => 'blog-index',
-//            ),
-//            array(
-//                'label' => 'Schedule',
-//                'route' => 'schedule-index',
-//                'pages' => array(
-//                    array(
-//                        'label' => 'Talks',
-//                        'route' => 'talks-index',
-//                    ),
-//                    array(
-//                        'label' => 'Speakers',
-//                        'route' => 'speakers-index',
-//                    ),
-//                ),
-//            ),
             array(
                 'label' => 'Sponsors',
                 'route' => 'sponsors-index',
-                'lastmod' => date('Y-m-d'),
+                'lastmod' => '2013-09-08',
                 'changefreq' => 'weekly',
                 'priority' => '0.7',
             ),
             array(
                 'label' => 'Contact',
                 'route' => 'contact-index',
-                'lastmod' => date('Y-m-d'),
+                'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
             ),
             array(
                 'label' => 'Register',
                 'route' => 'register',
-                'lastmod' => date('Y-m-d'),
+                'lastmod' => '2013-09-08',
                 'changefreq' => 'daily',
                 'priority' => '0.8',
             ),
         ),
     ),
     'service_manager' => array(
+        'factories' => array(
+            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
+        ),
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
         ),
         'aliases' => array(
             'translator' => 'MvcTranslator',
-        ),
-        'factories' => array(
-            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
         ),
     ),
     'translator' => array(

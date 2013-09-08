@@ -1,8 +1,7 @@
 <?php
-// format output
+
 $this->navigation('navigation')
     ->sitemap()
-    ->setFormatOutput(true); // default is false
+    ->setFormatOutput(true);
 
-// print sitemap
 echo $this->navigation()->sitemap();
