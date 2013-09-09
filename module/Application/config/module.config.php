@@ -122,6 +122,11 @@ return array(
                 'changefreq' => 'daily',
                 'priority' => '0.8',
             ),
+            array(
+                'label' => 'Call for Papers',
+                'uri' => 'http://cfp.sunshinephp.com',
+                'order' => '100',
+            ),
         ),
     ),
     'service_manager' => array(
