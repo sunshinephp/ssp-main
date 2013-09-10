@@ -31,6 +31,11 @@ class IndexController extends AbstractActionController
         return new ViewModel();
     }
     
+    public function diversityAction()
+    {
+        return new ViewModel();
+    }
+    
     public function sitemapAction()
     {
         $this->layout('layout/xml');
