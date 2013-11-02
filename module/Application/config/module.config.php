@@ -20,36 +20,6 @@ return array(
                     ),
                 ),
             ),
-            // The following is a route to simplify getting started creating
-            // new controllers and actions without needing to create a new
-            // module. Simply drop new controllers in, and you can access them
-            // using the path /application/:controller/:action
-            'application' => array(
-                'type'    => 'Literal',
-                'options' => array(
-                    'route'    => '/application',
-                    'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller'    => 'Index',
-                        'action'        => 'index',
-                    ),
-                ),
-                'may_terminate' => true,
-                'child_routes' => array(
-                    'default' => array(
-                        'type'    => 'Segment',
-                        'options' => array(
-                            'route'    => '/[:controller[/:action]]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ),
-                            'defaults' => array(
-                            ),
-                        ),
-                    ),
-                ),
-            ),
             'register' => array(
                 'type' => 'Literal',
                 'options' => array(
@@ -93,6 +63,7 @@ return array(
                 'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
                 'priority' => '1.0',
+                'order' => '10',
             ),
             array(
                 'label' => 'Venue',
@@ -100,20 +71,7 @@ return array(
                 'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
-            ),
-            array(
-                'label' => 'Sponsors',
-                'route' => 'sponsors-index',
-                'lastmod' => '2013-09-08',
-                'changefreq' => 'weekly',
-                'priority' => '0.7',
-            ),
-            array(
-                'label' => 'Contact',
-                'route' => 'contact-index',
-                'lastmod' => '2013-09-08',
-                'changefreq' => 'monthly',
-                'priority' => '0.5',
+                'order' => '20',
             ),
             array(
                 'label' => 'Register',
@@ -121,12 +79,13 @@ return array(
                 'lastmod' => '2013-09-08',
                 'changefreq' => 'daily',
                 'priority' => '0.8',
+                'order' => '90',
             ),
-            array(
-                'label' => 'Call for Papers',
-                'uri' => 'http://cfp.sunshinephp.com',
-                'order' => '100',
-            ),
+//            array(
+//                'label' => 'Call for Papers',
+//                'uri' => 'http://cfp.sunshinephp.com',
+//                'order' => '1000',
+//            ),
         ),
     ),
     'service_manager' => array(
