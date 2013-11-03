@@ -25,9 +25,23 @@ return array(
                 'options' => array(
                     'route' => '/register',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller' => 'Index',
+                        'controller' => 'Application\Controller\Index',
                         'action' => 'register',
+                    ),
+                ),
+                'may_terminate' => true,
+                'child_routes' => array(
+                    'default' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            'route'    => '/[:controller[/:action]]',
+                            'constraints' => array(
+                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ),
+                            'defaults' => array(
+                            ),
+                        ),
                     ),
                 ),
             ),
@@ -36,8 +50,6 @@ return array(
                 'options' => array(
                     'route' => '/venue',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller' => 'Index',
                         'action' => 'venue',
                     ),
                 ),
@@ -47,8 +59,7 @@ return array(
                 'options' => array(
                     'route' => '/sitemap',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller' => 'Index',
+                        'controller' => 'Application\Controller\Index',
                         'action' => 'sitemap',
                     ),
                 ),
