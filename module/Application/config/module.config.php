@@ -98,12 +98,12 @@ return array(
                 'order' => '10',
             ),
             array(
-                'label' => 'Venue',
+                'label' => 'Location & Hotel',
                 'route' => 'venue',
                 'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
-                'order' => '20',
+                'order' => '80',
             ),
             array(
                 'label' => 'Events',
@@ -111,7 +111,7 @@ return array(
                 'lastmod' => '2013-11-28',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
-                'order' => '25',
+                'order' => '20',
             ),
             array(
                 'label' => 'Uncon',
