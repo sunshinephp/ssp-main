@@ -45,11 +45,32 @@ return array(
                     ),
                 ),
             ),
+            'events' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/events',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'events',
+                    ),
+                ),
+            ),
+            'uncon' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/uncon',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'uncon',
+                    ),
+                ),
+            ),
             'venue' => array(
                 'type' => 'Literal',
                 'options' => array(
                     'route' => '/venue',
                     'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
                         'action' => 'venue',
                     ),
                 ),
@@ -83,6 +104,22 @@ return array(
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
                 'order' => '20',
+            ),
+            array(
+                'label' => 'Events',
+                'route' => 'events',
+                'lastmod' => '2013-11-28',
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
+                'order' => '25',
+            ),
+            array(
+                'label' => 'Uncon',
+                'route' => 'uncon',
+                'lastmod' => '2013-11-28',
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
+                'order' => '28',
             ),
             array(
                 'label' => 'Register',
