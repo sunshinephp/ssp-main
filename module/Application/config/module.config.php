@@ -122,7 +122,7 @@ return array(
                 'order' => '28',
             ),
             array(
-                'label' => 'Register',
+                'label' => 'Pricing & Registration',
                 'route' => 'register',
                 'lastmod' => '2013-09-08',
                 'changefreq' => 'daily',
