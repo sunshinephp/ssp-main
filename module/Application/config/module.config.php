@@ -55,6 +55,16 @@ return array(
                     ),
                 ),
             ),
+            'schedule' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/schedule',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'schedule',
+                    ),
+                ),
+            ),
             'uncon' => array(
                 'type' => 'Literal',
                 'options' => array(
@@ -104,6 +114,14 @@ return array(
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
                 'order' => '80',
+            ),
+            array(
+                'label' => 'Schedule',
+                'route' => 'schedule',
+                'lastmod' => '2013-12-03',
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
+                'order' => '20',
             ),
             array(
                 'label' => 'Events',
