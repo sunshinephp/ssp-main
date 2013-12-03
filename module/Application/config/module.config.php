@@ -116,7 +116,7 @@ return array(
                 'order' => '80',
             ),
             array(
-                'label' => 'Schedule',
+                'label' => 'Schedule & Layout',
                 'route' => 'schedule',
                 'lastmod' => '2013-12-03',
                 'changefreq' => 'monthly',
