@@ -121,7 +121,7 @@ return array(
                 'lastmod' => '2013-12-03',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
-                'order' => '20',
+                'order' => '29',
             ),
             array(
                 'label' => 'Events',
