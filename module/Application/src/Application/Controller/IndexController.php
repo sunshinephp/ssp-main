@@ -56,13 +56,6 @@ class IndexController extends AbstractActionController
         return new ViewModel();
     }
     
-    public function scheduleAction()
-    {
-        $this->layout('layout/layout_no_sidebar');
-        
-        return new ViewModel();
-    }
-    
     public function sitemapAction()
     {
         $this->layout('layout/xml');
