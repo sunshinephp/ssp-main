@@ -1197,3 +1197,11 @@ ul#icons span.ui-icon {
 	font-weight:bold;
 	background-color: #cccccc;
 }
+
+.lunch {
+	background-color: #fbeed5; // fbb450
+}
+
+.bottomline {
+	border-bottom: #000000 solid thin;
+}
