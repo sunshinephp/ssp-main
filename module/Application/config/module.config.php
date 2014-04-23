@@ -20,18 +20,13 @@ return array(
                     ),
                 ),
             ),
-            // The following is a route to simplify getting started creating
-            // new controllers and actions without needing to create a new
-            // module. Simply drop new controllers in, and you can access them
-            // using the path /application/:controller/:action
-            'application' => array(
-                'type'    => 'Literal',
+            'register' => array(
+                'type' => 'Literal',
                 'options' => array(
-                    'route'    => '/application',
+                    'route' => '/register',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller'    => 'Index',
-                        'action'        => 'index',
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'register',
                     ),
                 ),
                 'may_terminate' => true,
@@ -50,14 +45,23 @@ return array(
                     ),
                 ),
             ),
-            'register' => array(
+            'events' => array(
                 'type' => 'Literal',
                 'options' => array(
-                    'route' => '/register',
+                    'route' => '/events',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller' => 'Index',
-                        'action' => 'register',
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'events',
+                    ),
+                ),
+            ),
+            'uncon' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/uncon',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'uncon',
                     ),
                 ),
             ),
@@ -66,9 +70,18 @@ return array(
                 'options' => array(
                     'route' => '/venue',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller' => 'Index',
+                        'controller' => 'Application\Controller\Index',
                         'action' => 'venue',
+                    ),
+                ),
+            ),
+            'sitemap' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/sitemap',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'sitemap',
                     ),
                 ),
             ),
@@ -79,57 +92,60 @@ return array(
             array(
                 'label' => 'Home',
                 'route' => 'home',
+                'lastmod' => '2013-09-08',
+                'changefreq' => 'monthly',
+                'priority' => '1.0',
+                'order' => '10',
             ),
             array(
-                'label' => 'Venue',
+                'label' => 'Location & Hotel',
                 'route' => 'venue',
-            ),
-//            array(
-//                'label' => 'Press',
-//                'route' => 'press-index',
-//            ),
-//            array(
-//                'label' => 'Blog',
-//                'route' => 'blog-index',
-//            ),
-//            array(
-//                'label' => 'Schedule',
-//                'route' => 'schedule-index',
-//                'pages' => array(
-//                    array(
-//                        'label' => 'Talks',
-//                        'route' => 'talks-index',
-//                    ),
-//                    array(
-//                        'label' => 'Speakers',
-//                        'route' => 'speakers-index',
-//                    ),
-//                ),
-//            ),
-            array(
-                'label' => 'Sponsors',
-                'route' => 'sponsors-index',
+                'lastmod' => '2013-09-08',
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
+                'order' => '80',
             ),
             array(
-                'label' => 'Contact',
-                'route' => 'contact-index',
+                'label' => 'Events',
+                'route' => 'events',
+                'lastmod' => '2013-11-28',
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
+                'order' => '20',
             ),
             array(
-                'label' => 'Register',
+                'label' => 'Uncon',
+                'route' => 'uncon',
+                'lastmod' => '2013-11-28',
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
+                'order' => '28',
+            ),
+            array(
+                'label' => 'Pricing & Registration',
                 'route' => 'register',
+                'lastmod' => '2013-09-08',
+                'changefreq' => 'daily',
+                'priority' => '0.8',
+                'order' => '90',
             ),
+//            array(
+//                'label' => 'Call for Papers',
+//                'uri' => 'http://cfp.sunshinephp.com',
+//                'order' => '1000',
+//            ),
         ),
     ),
     'service_manager' => array(
+        'factories' => array(
+            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
+        ),
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
         ),
         'aliases' => array(
             'translator' => 'MvcTranslator',
-        ),
-        'factories' => array(
-            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
         ),
     ),
     'translator' => array(

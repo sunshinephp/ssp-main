@@ -30,4 +30,34 @@ class IndexController extends AbstractActionController
     {
         return new ViewModel();
     }
+    
+    public function privacyAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function diversityAction()
+    {
+        return new ViewModel();
+    }
+
+    public function aboutAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function eventsAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function unconAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function sitemapAction()
+    {
+        $this->layout('layout/xml');
+    }
 }

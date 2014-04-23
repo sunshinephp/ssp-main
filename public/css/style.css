@@ -1176,3 +1176,32 @@ ul#icons span.ui-icon {
 	color: #ffffff;
 	background-color: #B24926;
 }
+
+/**
+* schedule layout
+*/
+#schedule th {
+	background-color:#B24926;
+	font-weight:bold;
+	font-size:1.4em;
+	color:#ffffff;
+}
+
+#schedule table tr td {
+	text-align:center;
+	padding: 2px;
+}
+
+.keyrow {
+	text-align:center;
+	font-weight:bold;
+	background-color: #cccccc;
+}
+
+.lunch {
+	background-color: #fbeed5; // fbb450
+}
+
+.bottomline {
+	border-bottom: #000000 solid thin;
+}
