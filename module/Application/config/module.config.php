@@ -75,6 +75,16 @@ return array(
                     ),
                 ),
             ),
+            'conduct' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/conduct',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'conduct',
+                    ),
+                ),
+            ),
             'sitemap' => array(
                 'type' => 'Literal',
                 'options' => array(
