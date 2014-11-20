@@ -108,7 +108,7 @@ return array(
                 'order' => '10',
             ),
             array(
-                'label' => 'Location & Hotel',
+                'label' => 'Venue',
                 'route' => 'venue',
                 'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
