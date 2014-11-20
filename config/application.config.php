@@ -8,9 +8,9 @@ return array(
         'SspSponsors',
 //        'SspBlog',
 //        'SspPress',
-        'ZfcBase',
-        'ZfcUser',
-        'ArcFormViewHelpers',
+//        'ZfcBase',
+//        'ZfcUser',
+//        'ArcFormViewHelpers',
     ),
 
     // These are various options for the listeners attached to the ModuleManager

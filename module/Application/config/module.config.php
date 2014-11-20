@@ -75,6 +75,16 @@ return array(
                     ),
                 ),
             ),
+            'conduct' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/conduct',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'conduct',
+                    ),
+                ),
+            ),
             'sitemap' => array(
                 'type' => 'Literal',
                 'options' => array(
@@ -98,7 +108,7 @@ return array(
                 'order' => '10',
             ),
             array(
-                'label' => 'Location & Hotel',
+                'label' => 'Venue',
                 'route' => 'venue',
                 'lastmod' => '2013-09-08',
                 'changefreq' => 'monthly',
@@ -112,6 +122,24 @@ return array(
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
                 'order' => '20',
+                'pages' => array(
+                    array(
+                        'label' => 'test1',
+                        'route' => 'events',
+                        'lastmod' => '2013-11-28',
+                        'changefreq' => 'monthly',
+                        'priority' => '0.5',
+                        'order' => '20',
+                    ),
+                    array(
+                        'label' => 'test2',
+                        'route' => 'events',
+                        'lastmod' => '2013-11-28',
+                        'changefreq' => 'monthly',
+                        'priority' => '0.5',
+                        'order' => '20',
+                    ),
+                ),
             ),
             array(
                 'label' => 'Uncon',
@@ -161,6 +189,11 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController'
+        ),
+    ),
+    'view_helpers' => array(
+        'invokables' => array(
+            'sidebar' => 'Application\View\Helper\Sidebar',
         ),
     ),
     'view_manager' => array(
