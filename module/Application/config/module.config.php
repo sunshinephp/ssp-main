@@ -122,6 +122,24 @@ return array(
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
                 'order' => '20',
+                'pages' => array(
+                    array(
+                        'label' => 'test1',
+                        'route' => 'events',
+                        'lastmod' => '2013-11-28',
+                        'changefreq' => 'monthly',
+                        'priority' => '0.5',
+                        'order' => '20',
+                    ),
+                    array(
+                        'label' => 'test2',
+                        'route' => 'events',
+                        'lastmod' => '2013-11-28',
+                        'changefreq' => 'monthly',
+                        'priority' => '0.5',
+                        'order' => '20',
+                    ),
+                ),
             ),
             array(
                 'label' => 'Uncon',
