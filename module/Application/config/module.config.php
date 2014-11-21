@@ -102,7 +102,7 @@ return array(
             array(
                 'label' => 'Home',
                 'route' => 'home',
-                'lastmod' => '2013-09-08',
+                'lastmod' => '2014-11-21',
                 'changefreq' => 'monthly',
                 'priority' => '1.0',
                 'order' => '10',
@@ -110,7 +110,7 @@ return array(
             array(
                 'label' => 'Venue',
                 'route' => 'venue',
-                'lastmod' => '2013-09-08',
+                'lastmod' => '2014-11-21',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
                 'order' => '80',
@@ -118,7 +118,7 @@ return array(
             array(
                 'label' => 'Events',
                 'route' => 'events',
-                'lastmod' => '2013-11-28',
+                'lastmod' => '2014-11-21',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
                 'order' => '20',
@@ -126,7 +126,7 @@ return array(
             array(
                 'label' => 'Uncon',
                 'route' => 'uncon',
-                'lastmod' => '2013-11-28',
+                'lastmod' => '2014-11-21',
                 'changefreq' => 'monthly',
                 'priority' => '0.5',
                 'order' => '28',
@@ -134,7 +134,7 @@ return array(
             array(
                 'label' => 'Tickets',
                 'route' => 'register',
-                'lastmod' => '2013-09-08',
+                'lastmod' => '2014-11-21',
                 'changefreq' => 'daily',
                 'priority' => '0.8',
                 'order' => '90',
