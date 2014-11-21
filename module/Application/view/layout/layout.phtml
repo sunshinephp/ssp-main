@@ -11,8 +11,8 @@
 
         <!-- Le styles -->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
-                        ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
                         ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
                         ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css'); ?>
 
         <!-- Scripts -->
@@ -37,12 +37,12 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="nav-collapse">
-                        <?php
-                        echo $this->navigation('navigation')
-                            ->menu()
-                            ->setMinDepth(0)
-                            ->setMaxDepth(0)
-                            ->setUlClass('nav navbar-nav nav-pills pull-right');
+                        <?php echo $this->navigation('navigation')
+                                        ->menu()
+                                        ->setMinDepth(0)
+                                        ->setMaxDepth(2)
+                                        ->setPartial(array('application/partials/topnav.phtml', 'application'))
+                                        ->render();
                         ?>
                     </div>
                 </div>

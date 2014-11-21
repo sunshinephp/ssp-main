@@ -1,0 +1,38 @@
+<ul class="nav navbar-nav nav-pills pull-right" role="navigation">
+    <?php
+    $count = 0;
+    foreach ($this->container as $page) {
+        /* @var $page Zend\Navigation\Page\Mvc */
+        // when using partials we need to manually check for ACL conditions
+        if (!$page->isVisible() || !$this->navigation()->accept($page)) {
+            continue;
+        }
+        
+        if (!$page->hasPages()) {
+    ?>
+        <li<?php if($page->isActive()) echo ' class="active"'; ?>>
+            <a href="<?php echo $page->getHref() ?>"><?php echo $this->translate($page->getLabel()); ?></a>
+        </li>
+    <?php } else { ?>
+        <li class="dropdown">
+            <a class="dropdown-toggle" id="<?php echo $this->translate($page->getLabel()); ?>Drop" role="button" data-toggle="dropdown" data-target="#" href="<?php echo $page->getHref() ?>">
+                <?php echo $this->translate($page->getLabel()); ?> <b class="caret"></b>
+            </a>
+            
+            <ul class="dropdown-menu" role="menu" aria-labelledby="<?php echo $this->translate($page->getLabel()); ?>Drop" id="page_<?php echo $count; ?>">
+                <?php foreach($page->getPages() as $child) { ?>
+                    <?php // when using partials we need to manually check for ACL conditions ?>
+                    <?php if (!$child->isVisible() || !$this->navigation()->accept($child)) continue; ?>
+                    <li>
+                        <a href="<?php echo $child->getHref(); ?>">
+                            <?php echo $this->translate($child->getLabel()); ?>
+                        </a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </li>
+    <?php }
+        $count++;
+     }
+    ?>
+</ul>

@@ -80,6 +80,46 @@ hr.soften {
 	font-weight:bold;
 }
 
+.dropdown {
+	
+}
+
+.dropdown-toggle {
+	
+}
+
+.dropdown-menu {
+	background: #B74025;
+}
+
+.dropdown-menu > li > a {
+	color: #ffffff;
+	font-weight:bold;
+	padding: 5px;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	color: #fae80b;
+	font-weight:bold;
+	background: #B74025;
+	background: -moz-linear-gradient(45deg,  #B24926 0%, #B74025 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#B24926), color-stop(100%,#B74025)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  #B24926 0%,#B74025 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  #B24926 0%,#B74025 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  #B24926 0%,#B74025 100%); /* IE10+ */
+	background: linear-gradient(45deg,  #B24926 0%,#B74025 100%); /* W3C */
+}
+
+.navbar .nav li.dropdown .dropdown-toggle .caret {
+	border-top-color: #ffffff;
+	border-bottom-color: #ffffff;
+}
+
+.navbar .nav li.dropdown .dropdown-toggle:hover .caret, .navbar .nav li.dropdown .dropdown-toggle:focus .caret {
+	border-top-color: #fae80b;
+	border-bottom-color: #fae80b;
+}
+
 /* Jumbotrons
 -------------------------------------------------- */
 
