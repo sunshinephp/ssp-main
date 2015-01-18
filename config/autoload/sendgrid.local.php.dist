@@ -1,0 +1,19 @@
+<?php
+/**
+ * This file contains DB credentials for the sunshinephp app. Phing is
+ * used to populate the various fields based on the command passed, then should
+ * create a new file sendgrid.local.php like this:
+ *
+ * php /path/to/GetPhing/bin/phing -f /path/to/build.xml 
+ * -D sendgrid_username=sendgrid_username -D sendgrid_password=sendgrid_password 
+ * -D sendgrid_to=email@sunshinephp.com
+ *
+ */
+return array(
+    'send_grid' => array(
+        'url' => 'https://sendgrid.com/api/mail.send.json',
+        'user' => '%%sendgrid_username%%',
+        'key' => '%%sendgrid_password%%',
+        'to' => '%%sendgrid_to%%'
+    ),
+);

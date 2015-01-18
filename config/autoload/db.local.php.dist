@@ -1,0 +1,23 @@
+<?php
+/**
+ * This file contains DB credentials for the sunshinephp app. Phing is
+ * used to populate the various fields based on the command passed, then should
+ * create a new file db.local.php like this:
+ *
+ * php /path/to/GetPhing/bin/phing -f /path/to/build.xml 
+ * -D default_db_host=127.0.0.1 -D default_db_username=root 
+ * -D default_db_password=password -D default_db_name=db-name 
+ *
+ */
+return array(
+    'db' => array(
+        'driver' => 'pdo',
+        'dsn' => 'mysql:dbname=%%default_db_name%%;host=%%default_db_host%%',
+        'username' => '%%default_db_username%%',
+        'password' => '%%default_db_password%%',
+        'driver_options' => array(
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'",
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+        ),
+    ),
+);

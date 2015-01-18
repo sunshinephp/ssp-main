@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ssp" default="build">
+	<target name="build" depends="setappdbconfig,setsendgridconfig" />
+	
+	<target name="setappdbconfig" description="Create DB config file">
+		<copy file="config/autoload/db.local.php.dist" tofile="config/autoload/db.local.php" overwrite="true">
+			<filterchain>
+				<replacetokens begintoken="%%" endtoken="%%">
+					<token key="default_db_host" value="${default_db_host}" />
+					<token key="default_db_username" value="${default_db_username}" />
+					<token key="default_db_password" value="${default_db_password}" />
+					<token key="default_db_name" value="${default_db_name}" />
+				</replacetokens>
+			</filterchain>
+		</copy>
+	</target>
+
+	<target name="setsendgridconfig" description="Create SendGrid config file">
+		<copy file="config/autoload/sendgrid.local.php.dist" tofile="config/autoload/sendgrid.local.php" overwrite="true">
+			<filterchain>
+				<replacetokens begintoken="%%" endtoken="%%">
+					<token key="sendgrid_username" value="${sendgrid_username}" />
+					<token key="sendgrid_password" value="${sendgrid_password}" />
+					<token key="sendgrid_to" value="${sendgrid_to}" />
+				</replacetokens>
+			</filterchain>
+		</copy>
+	</target>
+</project>
