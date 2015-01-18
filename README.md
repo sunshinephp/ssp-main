@@ -7,8 +7,8 @@ Please check out the info below to ensure all dependencies are met.
 Requirements
 ------------
 
-See [composer.json](composer.json)
-The ssp-contact module includes SendGrid as the preferred email method.
+* See [composer.json](composer.json)
+* The ssp-contact module includes SendGrid as the preferred email method.
 
 Installation
 ------------
