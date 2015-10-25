@@ -12,7 +12,6 @@
         "sunshinephp/ssp-blog": "dev-master",
         "sunshinephp/ssp-press": "dev-master",
         "zf-commons/zfc-user": "0.1.*@dev",
-        "aramonc/zf2-form-view-helpers": "dev-master",
         "adamculp/api-consumer": "dev-master",
         "phing/phing": "2.9.1"
     }
