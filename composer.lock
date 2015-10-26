@@ -4,29 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0df4ee32abb84b875bcd4bc2ec1fbad2",
-    "content-hash": "814c9aea551271f9008ef3165da01b42",
+    "hash": "82c28a516eb08fa0cba2d655dbc74e61",
+    "content-hash": "ca504b2f53da89eb83c8d3cf054867e2",
     "packages": [
         {
             "name": "adamculp/api-consumer",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamculp/api-consumer.git",
-                "reference": "92ffebe42bff65051649e6d75d2ca0f16c5ca1e0"
+                "reference": "1116a920d89c5f193a16266f6558f6868c377b56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamculp/api-consumer/zipball/92ffebe42bff65051649e6d75d2ca0f16c5ca1e0",
-                "reference": "92ffebe42bff65051649e6d75d2ca0f16c5ca1e0",
+                "url": "https://api.github.com/repos/adamculp/api-consumer/zipball/1116a920d89c5f193a16266f6558f6868c377b56",
+                "reference": "1116a920d89c5f193a16266f6558f6868c377b56",
                 "shasum": ""
             },
             "require": {
-                "lib-curl": "*",
                 "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.1.3"
             },
             "type": "library",
             "autoload": {
@@ -41,7 +37,9 @@
             "authors": [
                 {
                     "name": "Adam Culp",
-                    "email": "adamculp@uws.net"
+                    "email": "adamculp@uws.net",
+                    "homepage": "http://geekyboy.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Basic API wrapper for dealing with Mashery and other GET based APIs.",
@@ -51,7 +49,178 @@
                 "mashery api",
                 "wrapper"
             ],
-            "time": "2014-09-24 20:08:35"
+            "time": "2013-04-12 18:33:27"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "66fd14b4d0b8f2389eaf37c5458608c7cb793a81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/66fd14b4d0b8f2389eaf37c5458608c7cb793a81",
+                "reference": "66fd14b4d0b8f2389eaf37c5458608c7cb793a81",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-09-08 17:36:26"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2015-10-15 22:28:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "4ef919b0cf3b1989523138b60163bbcb7ba1ff7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/4ef919b0cf3b1989523138b60163bbcb7ba1ff7e",
+                "reference": "4ef919b0cf3b1989523138b60163bbcb7ba1ff7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2015-08-15 19:32:36"
         },
         {
             "name": "phing/phing",
@@ -143,6 +312,55 @@
             "time": "2014-12-03 09:18:46"
         },
         {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
             "name": "sunshinephp/ssp-blog",
             "version": "dev-master",
             "source": {
@@ -190,19 +408,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sunshinephp/ssp-contact.git",
-                "reference": "8642a9063fbb1db3e5f6efa1d8ae44644ffea894"
+                "reference": "3c8c06fb2dd2bf55b2267bfb13f6482571b6a68d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sunshinephp/ssp-contact/zipball/8642a9063fbb1db3e5f6efa1d8ae44644ffea894",
-                "reference": "8642a9063fbb1db3e5f6efa1d8ae44644ffea894",
+                "url": "https://api.github.com/repos/sunshinephp/ssp-contact/zipball/3c8c06fb2dd2bf55b2267bfb13f6482571b6a68d",
+                "reference": "3c8c06fb2dd2bf55b2267bfb13f6482571b6a68d",
                 "shasum": ""
             },
             "require": {
+                "adamculp/api-consumer": "^1.0",
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "adamculp/api-consumer": "dev-master",
                 "zendframework/zend-form": "<=2.2.1",
                 "zendframework/zend-mail": "<=2.2.1",
                 "zendframework/zend-mvc": "<=2.2.1",
@@ -230,7 +448,7 @@
                 "ssp",
                 "ssphp"
             ],
-            "time": "2015-10-06 01:39:47"
+            "time": "2015-10-26 02:33:57"
         },
         {
             "name": "sunshinephp/ssp-press",
@@ -321,16 +539,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sunshinephp/ssp-talks.git",
-                "reference": "40806458274825a8437fbaf8b9935683c1c2cf6f"
+                "reference": "557d64508f06e627ab24889121fef641dbcb7469"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sunshinephp/ssp-talks/zipball/40806458274825a8437fbaf8b9935683c1c2cf6f",
-                "reference": "40806458274825a8437fbaf8b9935683c1c2cf6f",
+                "url": "https://api.github.com/repos/sunshinephp/ssp-talks/zipball/557d64508f06e627ab24889121fef641dbcb7469",
+                "reference": "557d64508f06e627ab24889121fef641dbcb7469",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "guzzlehttp/guzzle": ">=6.1.0",
+                "php": ">=5.5.0"
             },
             "type": "library",
             "autoload": {
@@ -354,7 +573,7 @@
                 "ssp",
                 "ssphp"
             ],
-            "time": "2015-10-25 15:27:05"
+            "time": "2015-10-26 02:19:39"
         },
         {
             "name": "zendframework/zendframework",
@@ -657,8 +876,7 @@
         "sunshinephp/ssp-sponsors": 20,
         "sunshinephp/ssp-blog": 20,
         "sunshinephp/ssp-press": 20,
-        "zf-commons/zfc-user": 20,
-        "adamculp/api-consumer": 20
+        "zf-commons/zfc-user": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
