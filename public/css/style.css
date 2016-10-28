@@ -1245,3 +1245,36 @@ ul#icons span.ui-icon {
 .bottomline {
 	border-bottom: #000000 solid thin;
 }
+
+.tag{font-variant:small-caps;font-weight:normal;border-radius:6px;background-color:gray;color:white;margin:0 0 5px 0;padding:3px 5px;min-width:6em;text-align:center}
+.tag.small{width:1.2em;min-width:0;display:inline-block;padding:1px 3px;font-size:70%;margin:2px 5px 2px 0}
+.tag.large{min-width:0;display:inline-block;padding:5px 20px 5px 20px;font-size:15px;margin:0 0 0 5px}
+.f_wrap{display:inline-block;whitespace:nowrap}
+.talk_tip .tag{float:right;margin:0 0.6em 0.6em 0}
+.tag.session{background-color:gray}
+.tag.short{background-color:#CCC}
+.tag.tutorial{background-color:black}
+.tag.keynote{background-color:#534c58}
+.tag.softskills{background-color:#a9dba9}
+.tag.beginner{background-color:#534c58}
+.tag.intermediate{background-color:#c09853}
+.tag.advanced{background-color:#9C3A41}
+.tag.oop{background-color:#A500CD}
+.tag.security{background-color:red}
+.tag.ecommerce{background-color:#356635}
+.tag.devops{background-color:#2078BC}
+.tag.testing{background-color:#942a25}
+.tag.development{background-color:#953b39}
+.tag.api{background-color:#DD1144}
+.tag.uiux{background-color:#317c9c}
+.tag.scaling{background-color:#b3b3b3}
+.tag.javascript{background-color:#5eb95e}
+.tag.database{background-color:#1b1b1b}
+.tag.cdci{background-color:#003bb3}
+.tag.wordpress{background-color:#0B9FD1}
+.tag.magento{background-color:#EF672F}
+.tag.docker{background-color:#002a80}
+.tag.zendframework{background-color:#69B44A}
+.tag.symfony{background-color:#353436}
+.tag.laravel{background-color:#F17070}
+.f_legend{font-size:80%;width:100%;text-align:center}
