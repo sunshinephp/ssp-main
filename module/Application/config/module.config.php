@@ -85,6 +85,16 @@ return array(
                     ),
                 ),
             ),
+//            'expect' => array(
+//                'type' => 'Literal',
+//                'options' => array(
+//                    'route' => '/expect',
+//                    'defaults' => array(
+//                        'controller' => 'Application\Controller\Index',
+//                        'action' => 'expect',
+//                    ),
+//                ),
+//            ),
             'sitemap' => array(
                 'type' => 'Literal',
                 'options' => array(
@@ -141,7 +151,7 @@ return array(
             ),
 //            array(
 //                'label' => 'Call for Papers',
-//                'uri' => 'http://cfp.sunshinephp.com',
+//                'uri' => 'https://cfp.sunshinephp.com',
 //                'order' => '1000',
 //            ),
         ),
