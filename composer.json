@@ -4,14 +4,12 @@
     "keywords": ["sunshinephp","main-site"],
     "homepage": "http://sunshinephp.com/",
     "require": {
-        "php": ">=5.3.3",
-        "zendframework/zendframework": "2.5.*",
+        "zendframework/zendframework": "2.2.*",
         "sunshinephp/ssp-contact": "dev-master",
         "sunshinephp/ssp-talks": "dev-master",
         "sunshinephp/ssp-sponsors": "dev-master",
         "sunshinephp/ssp-blog": "dev-master",
         "sunshinephp/ssp-press": "dev-master",
-        "zf-commons/zfc-user": "0.1.*@dev",
         "phing/phing": "2.9.1"
     }
 }
