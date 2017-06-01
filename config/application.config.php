@@ -4,8 +4,8 @@ return array(
     'modules' => array(
         'Application',
         'SspContact',
-        'SspTalks',
-        'SspSponsors',
+//        'SspTalks',
+//        'SspSponsors',
 //        'SspBlog',
 //        'SspPress',
 //        'ZfcBase',
