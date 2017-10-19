@@ -4,12 +4,10 @@ return array(
     'modules' => array(
         'Application',
         'SspContact',
-//        'SspTalks',
+        'SspTalks',
 //        'SspSponsors',
 //        'SspBlog',
 //        'SspPress',
-//        'ZfcBase',
-//        'ZfcUser',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
