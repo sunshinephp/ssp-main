@@ -1265,6 +1265,7 @@ ul#icons span.ui-icon {
 .tag.devops{background-color:#2078BC}
 .tag.testing{background-color:#942a25}
 .tag.development{background-color:#953b39}
+.tag.core{background-color:#953b39}
 .tag.api{background-color:#DD1144}
 .tag.uiux{background-color:#317c9c}
 .tag.scaling{background-color:#b3b3b3}
@@ -1275,6 +1276,7 @@ ul#icons span.ui-icon {
 .tag.magento{background-color:#EF672F}
 .tag.docker{background-color:#002a80}
 .tag.zendframework{background-color:#69B44A}
+.tag.slim{background-color:#353436}
 .tag.symfony{background-color:#353436}
 .tag.laravel{background-color:#F17070}
 .f_legend{font-size:80%;width:100%;text-align:center}
