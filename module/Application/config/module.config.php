@@ -15,7 +15,7 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Application\Controller\Pages',
                         'action'     => 'index',
                     ),
                 ),
@@ -25,7 +25,7 @@ return array(
                 'options' => array(
                     'route' => '/register',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Application\Controller\Pages',
                         'action' => 'register',
                     ),
                 ),
@@ -50,7 +50,7 @@ return array(
                 'options' => array(
                     'route' => '/events',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Application\Controller\Pages',
                         'action' => 'events',
                     ),
                 ),
@@ -60,7 +60,7 @@ return array(
                 'options' => array(
                     'route' => '/uncon',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Application\Controller\Pages',
                         'action' => 'uncon',
                     ),
                 ),
@@ -70,7 +70,7 @@ return array(
                 'options' => array(
                     'route' => '/venue',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Application\Controller\Pages',
                         'action' => 'venue',
                     ),
                 ),
@@ -80,7 +80,7 @@ return array(
                 'options' => array(
                     'route' => '/conduct',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Application\Controller\Pages',
                         'action' => 'conduct',
                     ),
                 ),
@@ -90,7 +90,7 @@ return array(
 //                'options' => array(
 //                    'route' => '/expect',
 //                    'defaults' => array(
-//                        'controller' => 'Application\Controller\Index',
+//                        'controller' => 'Application\Controller\Pages',
 //                        'action' => 'expect',
 //                    ),
 //                ),
@@ -100,7 +100,7 @@ return array(
                 'options' => array(
                     'route' => '/sitemap',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Application\Controller\Pages',
                         'action' => 'sitemap',
                     ),
                 ),
@@ -180,7 +180,7 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Application\Controller\Pages' => 'Application\Controller\PagesController'
         ),
     ),
     'view_helpers' => array(
