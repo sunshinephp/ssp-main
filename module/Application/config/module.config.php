@@ -149,11 +149,11 @@ return array(
                 'priority' => '0.8',
                 'order' => '90',
             ),
-//            array(
-//                'label' => 'Call for Papers',
-//                'uri' => 'https://cfp.sunshinephp.com',
-//                'order' => '1000',
-//            ),
+            array(
+                'label' => 'Call for Papers',
+                'uri' => 'https://cfp.sunshinephp.com',
+                'order' => '1000',
+            ),
         ),
     ),
     'service_manager' => array(

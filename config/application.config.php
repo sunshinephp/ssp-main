@@ -5,7 +5,7 @@ return array(
         'Application',
         'SspContact',
         'SspTalks',
-        'SspSponsors',
+//        'SspSponsors',
 //        'SspBlog',
 //        'SspPress',
     ),
