@@ -3,8 +3,8 @@ return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
         'Application',
-//        'SspContact',
-//        'SspTalks',
+        'SspContact',
+        'SspTalks',
 //        'SspSponsors',
 //        'SspBlog',
 //        'SspPress',
